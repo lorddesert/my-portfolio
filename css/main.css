@@ -50,7 +50,7 @@ header ul {
 
 header ul a {
   display: block;
-  padding: 0 1em;
+  padding: 0 0.5em;
 }
 
 .social-header,
@@ -180,6 +180,43 @@ section {
   margin-bottom: 2em;
 }
 
+footer {
+  background: #6000ff;
+}
+
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer nav .logo {
+  color: #0eeab5;
+  font-weight: bold;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer nav ul a {
+  color: #fff;
+}
+
+footer nav ul a:hover {
+  color: #fff;
+}
+
+footer nav ul li {
+  margin: 0 0.5em;
+}
+
 @media only screen and (min-width: 800px) {
   .featured,
   .portfolio {
@@ -196,7 +233,7 @@ section {
   .portfolio-left {
     display: -ms-grid;
     display: grid;
-    place-content: center;
+    place-content: center start;
   }
   .right {
     margin-left: 2em;
