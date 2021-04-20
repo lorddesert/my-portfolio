@@ -4,6 +4,7 @@ $backgruond-1: #6900ee;
 $background-2: #6000ff;
 $pink: #ff64cb;
 $greenish: #0eeab5;
+$cel-btn-background: #131313;
 body {
   height: 100vh;
   margin: 0;
@@ -244,6 +245,99 @@ footer nav {
   .portfolio-container img {
     margin-left: 2em;
   }
+
+  .cellphone {
+    max-width: 40vw;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+.cta {
+  width: 100%;
+  text-align: center !important;
+
+  a {
+    color: $pink;
+  }
+}
+
+.contact {
+  display: grid;
+  place-items: center;
+
+  form {
+    text-align: start;
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    .display {
+      display: grid;
+      margin-top: 20px;
+      background: #0eeab5;
+      padding: 2em;
+    }
+
+    input,
+    text-area {
+      font-size: 0.9rem;
+    }
+    label {
+      font-weight: bold;
+    }
+    input {
+      height: 3rem;
+      padding: 0.5em;
+    }
+  }
+
+  .cellphone {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border: 2px solid #a6a6a6;
+    border-radius: 35px;
+    padding-top: 1.5em;
+    height: 100vh;
+
+    .talking {
+      margin: 0 auto;
+      width: 50%;
+    }
+
+    .cellphone-bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.2em;
+
+      img {
+        width: 50px;
+      }
+
+      button {
+        font-weight: bold;
+        background: $cel-btn-background;
+        border: none;
+        border-radius: 12px;
+        padding: 0 3em;
+        color: #fff;
+        letter-spacing: 0.03em;
+      }
+    }
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    transform: translate(0, 0px);
+    z-index: 5;
+  }
+
+  to {
+    transform: translate(0, 40px);
+  }
 }
 
 @media only screen and (min-width: 1050px) {
@@ -348,20 +442,5 @@ footer nav {
   }
   .hero .content {
     padding: 9em 20em 6em 20em;
-  }
-}
-
-.circle {
-  animation: circleAnim 1s infinite alternate-reverse;
-}
-
-@keyframes circleAnim {
-  from {
-    transform: translate(0, 0px);
-    z-index: 5;
-  }
-
-  to {
-    transform: translate(0, 40px);
   }
 }

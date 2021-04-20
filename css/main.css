@@ -257,6 +257,122 @@ footer nav ul li {
   .portfolio-container img {
     margin-left: 2em;
   }
+  .cellphone {
+    max-width: 40vw;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+.cta {
+  width: 100%;
+  text-align: center !important;
+}
+
+.cta a {
+  color: #ff64cb;
+}
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.contact form {
+  text-align: start;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+}
+
+.contact form .display {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 20px;
+  background: #0eeab5;
+  padding: 2em;
+}
+
+.contact form input,
+.contact form text-area {
+  font-size: 0.9rem;
+}
+
+.contact form label {
+  font-weight: bold;
+}
+
+.contact form input {
+  height: 3rem;
+  padding: 0.5em;
+}
+
+.contact .cellphone {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+  border: 2px solid #a6a6a6;
+  border-radius: 35px;
+  padding-top: 1.5em;
+  height: 100vh;
+}
+
+.contact .cellphone .talking {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.contact .cellphone .cellphone-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.2em;
+}
+
+.contact .cellphone .cellphone-bottom img {
+  width: 50px;
+}
+
+.contact .cellphone .cellphone-bottom button {
+  font-weight: bold;
+  background: #131313;
+  border: none;
+  border-radius: 12px;
+  padding: 0 3em;
+  color: #fff;
+  letter-spacing: 0.03em;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(0, 40px);
+            transform: translate(0, 40px);
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(0, 40px);
+            transform: translate(0, 40px);
+  }
 }
 
 @media only screen and (min-width: 1050px) {
@@ -357,34 +473,6 @@ footer nav ul li {
   }
   .hero .content {
     padding: 9em 20em 6em 20em;
-  }
-}
-
-.circle {
-  animation: circleAnim 1s infinite alternate-reverse;
-}
-
-@-webkit-keyframes circleAnim {
-  from {
-    -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px);
-    z-index: 5;
-  }
-  to {
-    -webkit-transform: translate(0, 40px);
-            transform: translate(0, 40px);
-  }
-}
-
-@keyframes circleAnim {
-  from {
-    -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px);
-    z-index: 5;
-  }
-  to {
-    -webkit-transform: translate(0, 40px);
-            transform: translate(0, 40px);
   }
 }
 /*# sourceMappingURL=main.css.map */

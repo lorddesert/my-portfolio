@@ -20,7 +20,7 @@
           <ul>
             <li><a href="#portfolio">My work</a></li>
             <li><a href="#skills">My skills</a></li>
-            <li><a href="mailto:sacha.nocetto@hotmail.com">Hire me</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -135,6 +135,37 @@
           <img src="images/sesion-del-locro.jpg" alt="sesion del locro">
         </a>
       </div>
+      <div class="cta transition3">
+        <h2>Like what you see?</h2>
+        <p>
+          Feel free to contact me via email at
+          <a href="mailto:sacha.nocetto@hotmail.com">sacha.nocetto@hotmail.com</a>
+        </p>
+        <p>
+          Or drop a line in the form at the
+          <a href="#cellphone">contact form</a>
+        </p>
+      </div>
+    </section>
+    <section class="contact transition4" id="contact">
+      <div class="cellphone" id="cellphone">
+        <img src="images/talking.svg" class="talking" alt="cellphone talking">
+        <form id="form" action="https://formspree.io/f/xknkgvlo" method="POST">
+          <div class="display">
+            <label for="name">Name</label>
+            <input type="name" required placeholder="John Doe" name="name">
+            <label for="email">Email</label>
+            <input type="email" required placeholder="example@hotmail.com" name="email">
+            <label for="msg">Message</label>
+            <textarea name="msg" id="msg" cols="30" rows="4" required></textarea>
+          </div>
+          <div class="cellphone-bottom">
+            <img src="images/cel-left-btn.svg" alt="left image">
+            <button type="submit">Send</button>
+            <img src="images/cel-right-btn.svg" alt="right image">
+          </div>
+        </form>
+      </div>
     </section>
     <footer>
       <nav>
@@ -142,7 +173,7 @@
         <ul>
           <li><a href="#portfolio">My work</a></li>
           <li><a href="#skills">My skills</a></li>
-          <li><a href="mailto:sacha.nocetto@hotmail.com">Hire me</a></li>
+          <li><a href="mailto:sacha.nocetto@hotmail.com">Contact</a></li>
         </ul>
       </nav>
     </footer>
@@ -198,6 +229,39 @@
           duration: 1.2,
           stagger: .6
         })
+        gsap.from(".transition4", {
+            scrollTrigger: {
+              trigger: ".transition4",
+              start: "top center"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .6
+          })
+
+        const form = document.querySelector("#form");
+
+        form.addEventListener('submit', handleSubmit)
+
+        async function handleSubmit (e) {
+          e.preventDefault();
+
+          const form = new FormData(this);
+
+          const res = await fetch(this.action, {
+            method: 'POST',
+            body: form,
+            headers: {
+              'Accept': 'application/json'
+            }
+          })
+
+          if(res.ok) {
+            alert('Mail sended!');
+            form.reset();
+          }
+        }
     </script>
   </body>
 </html>
