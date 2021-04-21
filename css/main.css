@@ -189,6 +189,7 @@ footer nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 66%;
   padding: 2em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -270,6 +271,7 @@ footer nav ul li {
 .cta {
   width: 100%;
   text-align: center !important;
+  padding: 4em;
 }
 
 .cta a {
@@ -296,6 +298,7 @@ footer nav ul li {
   margin-top: 20px;
   background: #0eeab5;
   padding: 2em;
+  grid-gap: 2em;
 }
 
 .contact form input,
@@ -320,7 +323,7 @@ footer nav ul li {
   border: 2px solid #a6a6a6;
   border-radius: 35px;
   padding-top: 1.5em;
-  height: 100vh;
+  height: 100%;
 }
 
 .contact .cellphone .talking {

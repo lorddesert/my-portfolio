@@ -183,6 +183,7 @@ footer {
 
 footer nav {
   display: flex;
+  width: 66%;
   padding: 2em;
   justify-content: space-between;
 
@@ -259,6 +260,7 @@ footer nav {
 .cta {
   width: 100%;
   text-align: center !important;
+  padding: 4em;
 
   a {
     color: $pink;
@@ -280,6 +282,7 @@ footer nav {
       margin-top: 20px;
       background: #0eeab5;
       padding: 2em;
+      grid-gap: 2em;
     }
 
     input,
@@ -301,7 +304,7 @@ footer nav {
     border: 2px solid #a6a6a6;
     border-radius: 35px;
     padding-top: 1.5em;
-    height: 100vh;
+    height: 100%;
 
     .talking {
       margin: 0 auto;
