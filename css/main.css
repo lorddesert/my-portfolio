@@ -94,6 +94,7 @@ section {
 
 .featured {
   position: relative;
+  overflow: hidden;
 }
 
 .featured::before {
@@ -236,7 +237,7 @@ footer nav ul li {
     place-content: center start;
   }
   .right {
-    margin-left: 2em;
+    margin-left: 150px;
     margin-top: 1em;
   }
   .skills {

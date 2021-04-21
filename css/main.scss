@@ -91,6 +91,7 @@ section {
 
 .featured {
   position: relative;
+  overflow: hidden;
 }
 
 .featured::before {
@@ -223,7 +224,7 @@ footer nav {
   }
 
   .right {
-    margin-left: 2em;
+    margin-left: 150px;
     margin-top: 1em;
   }
 
