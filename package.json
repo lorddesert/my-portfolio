@@ -1,11 +1,15 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "My personal portfolio.",
+  "name": "lorddesert",
+  "version": "2.0.0",
+  "description": "Lorddesert's place. Have fun.",
   "main": "index.html",
   "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
   },
-  "author": "lorddesert",
+  "author": "Sacha Nocetto<sacha.nocetto@hotmail.com>",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/react": "1.8.1",
