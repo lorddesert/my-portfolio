@@ -8,12 +8,18 @@ import {
  Container,
  Image,
  useColorModeValue,
- Link
+ Link,
+ ListItem,
+ List,
+ Icon,
+ SimpleGrid
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { GridItem } from '../components/grid-item'
 
 const Page = () => {
  return (
@@ -51,8 +57,9 @@ const Page = () => {
       Mi trabajo
      </Heading>
      <Paragraph>
-      Soy un Desarrollador y Diseñador Web al que invierte todo su tiempo libre
-      en desarrollar {''}
+      Soy un Desarrollador y Diseñador Web Freelance con 2 años de experiencia,
+      curioso y amante de la musica, al que le gusta invertir su tiempo libre en
+      desarrollar proyectos como: {''}
       <NextLink href="/trabajos/imigy">
        <Link>Imigy</Link>
       </NextLink>
@@ -88,6 +95,27 @@ const Page = () => {
       I ❤
      </Heading>
      Musica, Videojuegos, Escribir, Programar, Crear, Tecnologia.
+    </Section>
+    <Section delay={0.3}>
+     <Heading as="h3" variant="section-title">
+      On the web
+     </Heading>
+     <List>
+      <ListItem>
+       <Link href="https://github.com/lorddesert" target="_blank">
+        <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>}>
+            @lorddesert
+        </Button>
+       </Link>
+      </ListItem>
+      <ListItem>
+       <Link href="https://twitter.com/lorddesert" target="_blank">
+        <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter}/>}>
+            @lorddesert
+        </Button>
+       </Link>
+      </ListItem>
+     </List>
     </Section>
    </Container>
   </Layout>
