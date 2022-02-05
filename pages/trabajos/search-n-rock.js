@@ -1,4 +1,4 @@
-import { Container, Badge, Link, List, ListItem, AlertTitle } from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 
@@ -11,7 +11,7 @@ const Work = () => {
         <Layout title="Search'n Rock">
             <Container>
                 <Title>
-                    Search n' Rock <Badge>2019</Badge>
+                    Search n&apos; Rock <Badge>2019</Badge>
 
                 </Title>
                 <P>Aplicacion web (challenge tecnico). Busca información sobre tus bandas de Rock favoritas.</P>

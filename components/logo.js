@@ -25,7 +25,6 @@ const Logo = () => {
 //  const logoImg = '/images/logo.png'
  return (
   <Link href='/'>
-   <a href="/">
     <LogoBox>
      <Image src={logoImg} width={30} height={30} alt="logo"></Image>
      <Text
@@ -37,7 +36,6 @@ const Logo = () => {
       Sacha Nocetto
      </Text>
     </LogoBox>
-   </a>
   </Link>
  )
 }

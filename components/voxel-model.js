@@ -13,7 +13,7 @@ const VoxelModel = () => {
  const refContainer = useRef()
  const [loading, setLoading] = useState(true)
  const [renderer, setRenderer] = useState()
- const [camera, setCamera] = useState()
+ const [_camera, setCamera] = useState()
  const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
  const [initialCameraPosition] = useState(
   new THREE.Vector3(
@@ -24,7 +24,7 @@ const VoxelModel = () => {
  )
 
  const [scene] = useState(new THREE.Scene())
- const [controls, setControls] = useState()
+ const [_controls, setControls] = useState()
  const handleWindowResize = useCallback(() => {
   const { current: container } = refContainer
   if (container && renderer) {
@@ -70,6 +70,7 @@ const VoxelModel = () => {
    const controls = new OrbitControls(camera, renderer.domElement)
    controls.autoRotate = true
    controls.target = target
+   setControls(controls)
 
    loadGLTFModel(scene, '/cat-cup.glb', {
     receiveShadow: false,
