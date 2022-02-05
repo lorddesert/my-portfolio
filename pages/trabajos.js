@@ -21,7 +21,7 @@ const Works = () => {
      </Section>
      <Section>
       <WorkGridItem
-       id="search-rock"
+       id="search-n-rock"
        title="Search n' rock"
        thumbnail={thumbSearchNRock}
       >
@@ -29,6 +29,9 @@ const Works = () => {
       </WorkGridItem>
      </Section>
     </SimpleGrid>
+    {/* <Heading as="h3" fontSize={20} my={4}>
+     Proyectos
+    </Heading> */}
    </Container>
   </Layout>
  )
