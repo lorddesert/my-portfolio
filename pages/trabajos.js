@@ -4,6 +4,7 @@ import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 
 import thumbImigy from '../public/images/imigy.png'
+import thumbQuartex from '../public/images/quartex.png'
 import thumbSearchNRock from '../public/images/search-n-rock.png'
 
 const Works = () => {
@@ -12,6 +13,16 @@ const Works = () => {
    <Container>
     <Heading as="h3" fontSize={20} mb={4}>
      Trabajos
+    </Heading>
+    <SimpleGrid columns={[1, 1, 2]} gap={6}>
+     <Section>
+      <WorkGridItem id="quartex" title="Quartex.net" thumbnail={thumbQuartex}>
+       Plataforma/foro de tecnología para expresarse libremente.
+      </WorkGridItem>
+     </Section>
+    </SimpleGrid>
+    <Heading as="h3" fontSize={20} my={4}>
+     Proyectos
     </Heading>
     <SimpleGrid columns={[1, 1, 2]} gap={6}>
      <Section>
@@ -29,9 +40,6 @@ const Works = () => {
       </WorkGridItem>
      </Section>
     </SimpleGrid>
-    {/* <Heading as="h3" fontSize={20} my={4}>
-     Proyectos
-    </Heading> */}
    </Container>
   </Layout>
  )
