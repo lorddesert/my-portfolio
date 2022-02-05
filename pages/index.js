@@ -115,7 +115,7 @@ const Page = () => {
       </ListItem>
      </List>
     </Section>
-    <span>Special thanks to <Link href="https://github.com/craftzdog">@craftzdog</Link> and <Link href="https://sketchfab.com/ini_andri">ini_andri</Link></span>
+    <span>Gracias a <Link href="https://github.com/craftzdog">@craftzdog</Link> and <Link href="https://sketchfab.com/ini_andri">ini_andri</Link></span>
    </Container>
   </Layout>
  )
