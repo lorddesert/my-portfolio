@@ -4,7 +4,7 @@ import { Box, Heading, Container, Text, Divider, Button } from '@chakra-ui/react
 const NotFound = () => {
     return (
         <Container>
-            <Heading as="h1">No se encontro</Heading>
+            <Heading as="h1">Error 404 - No se encontro</Heading>
             <Text>La pagina que estas buscando no se encontro :C.</Text>
             <Divider my={6} />
             <Box my={6} align="center">
