@@ -12,14 +12,12 @@ import {
  ListItem,
  List,
  Icon,
- SimpleGrid
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import { GridItem } from '../components/grid-item'
+import { IoLogoTwitter, IoLogoGithub } from 'react-icons/io5'
 
 const Page = () => {
  return (
@@ -98,7 +96,7 @@ const Page = () => {
     </Section>
     <Section delay={0.3}>
      <Heading as="h3" variant="section-title">
-      On the web
+        Mis redes
      </Heading>
      <List>
       <ListItem>
@@ -117,6 +115,7 @@ const Page = () => {
       </ListItem>
      </List>
     </Section>
+    <span>Special thanks to <Link href="https://github.com/craftzdog">@craftzdog</Link> and <Link href="https://sketchfab.com/ini_andri">ini_andri</Link></span>
    </Container>
   </Layout>
  )
