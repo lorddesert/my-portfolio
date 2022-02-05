@@ -1,14 +1,100 @@
+import NextLink from 'next/link'
+import Layout from '../components/layouts/article'
 
+import {
+ Box,
+ Button,
+ Heading,
+ Container,
+ Image,
+ useColorModeValue,
+ Link
+} from '@chakra-ui/react'
+import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
-    return <>
-    <section className="bio">
-        <hgroup>
-            <h1>Sacha Nocetto</h1>
-            <h2>Front end dev</h2>
-        </hgroup>
-        
-        <p>Soy un desarrollador web y diseñador UI con 2 años de experiencia, siempre buscando algo nuevo que aprender. Me gusta participar tanto en el prototipado de un diseño como el en desarrollo del producto. Cuando no trabajo me gusta escuchar musica y jugar videojuegos.</p>
+ return (
+  <Layout>
+   <Container className="bio">
+    <Box
+     borderRadius="lg"
+     bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+     p={3}
+     mb={6}
+    >
+     Hola, Soy Front end Developer y UI designer en Argentina!
+    </Box>
+    <Box display={{ md: 'flex' }}>
+     <Box flexGrow={1}>
+      <Heading>Sacha Nocetto</Heading>
+      <p>Front end dev</p>
+     </Box>
+     <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
+      <Image
+       borderColor="whiteAlpha.800"
+       borderWidth={2}
+       borderStyle="solid"
+       maxWidth="100px"
+       display="inline-block"
+       borderRadius="full"
+       src="/images/logo.png"
+       alt="Imagen de perfil"
+      />
+     </Box>
+    </Box>
+
+    <Section delay={0.1}>
+     <Heading as="h3" variant="section-title">
+      Mi trabajo
+     </Heading>
+     <Paragraph>
+      Soy un Desarrollador y Diseñador Web al que invierte todo su tiempo libre
+      en desarrollar {''}
+      <NextLink href="/trabajos/imigy">
+       <Link>Imigy</Link>
+      </NextLink>
+      .{' '}
+     </Paragraph>
+     <Box align="center" my={4}>
+      <NextLink href="/trabajos">
+       <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+        Portafolio
+       </Button>
+      </NextLink>
+     </Box>
+    </Section>
+
+    <Section delay={0.2}>
+     <Heading as="h3" variant="section-title">
+      Bio
+     </Heading>
+     <BioSection>
+      <BioYear>Abril 2020 - Julio 2021</BioYear>
+      Front end developer en
+      <NextLink href="https://quartex.net">
+       <Link> Quartex.net</Link>
+      </NextLink>
+     </BioSection>
+     <BioSection>
+      <BioYear>Julio 2021 - Presente</BioYear>
+      Front end developer Freelance
+     </BioSection>
+    </Section>
+    <Section>
+     <Heading as="h3" variant="section-title">
+      I ❤
+     </Heading>
+     Musica, Videojuegos, Escribir, Programar, Crear, Tecnologia.
+    </Section>
+   </Container>
+  </Layout>
+ )
+
+ {
+  /* <p>Soy un desarrollador web y diseñador UI con 2 años de experiencia, siempre buscando algo nuevo que aprender. Me gusta participar tanto en el prototipado de un diseño como el en desarrollo del producto. Cuando no trabajo me gusta escuchar musica y jugar videojuegos.</p>
         <button>Mis trabajos</button>
     </section>
 
@@ -108,7 +194,6 @@ const Page = () => {
         </ul>
     </section>
 
-    {/* Cuando ponerlo? */}
     <section className="snippets">
         <h2>Mis ultimos snippets</h2>
         <ul>
@@ -116,8 +201,10 @@ const Page = () => {
             <li><a href="github.com/lorddeser/imigy">Imigy</a></li>
             <li><a href="google.com">Tutorial</a></li>
         </ul>
-    </section>
+    </section> 
     </>
+    */
+ }
 }
 
 export default Page
