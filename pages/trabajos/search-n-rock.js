@@ -23,7 +23,14 @@ const Work = () => {
                         <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
-                    <Meta>Platform</Meta>
+                    <ListItem>
+                        <Meta>Diseño y Prototipado</Meta>
+                        <Link href="https://www.figma.com/file/GrFnbkDpLtcfu4KGguiQgS/Search-n'-rock?node-id=0%3A1">
+                        Figma
+                        <ExternalLinkIcon mx="2px" />
+                        </Link>
+                    </ListItem>
+                    <Meta>Plataforma</Meta>
                     <span>Web</span>
                     <ListItem>
                         <Meta>Stack</Meta>
