@@ -6,7 +6,7 @@ import logoImg from '../public/images/logo.png'
 
 const LogoBox = styled.span`
  font-weight: bold;
- font-size: 18px;
+ font-size: 24px;
  display: inline-flex;
  align-items: center;
  height: 30px;
@@ -30,7 +30,7 @@ const Logo = () => {
      <Image src={logoImg} width={30} height={30} alt="logo"></Image>
      <Text
       color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-      fontFamily="M PLUS Rounded 1c"
+      fontFamily="'M PLUS Rounded 1c', sans-serif"
       fontWeight="bold"
       ml={3}
      >
