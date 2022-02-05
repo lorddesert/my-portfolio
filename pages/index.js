@@ -55,7 +55,7 @@ const Page = () => {
       Mi trabajo
      </Heading>
      <Paragraph>
-      Soy un Desarrollador y Diseñador Web Freelance con 2 años de experiencia,
+      Soy un Desarrollador y Diseñador UI/Web Freelance con 2 años de experiencia,
       curioso y amante de la musica, al que le gusta invertir su tiempo libre en
       desarrollar proyectos como: {''}
       <NextLink href="/trabajos/imigy">
