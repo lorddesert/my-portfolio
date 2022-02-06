@@ -11,10 +11,12 @@ const Main = ({ children }) => {
   <Box as="main" pb={8}>
    <Head>
     <meta charSet="UTF-8" />
-    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Front end DEV, UI Designer" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
     <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+    <meta name="description" content="Front end DEV, UI Designer" />
     <title>Sacha Nocetto - Home</title>
    </Head>
 
