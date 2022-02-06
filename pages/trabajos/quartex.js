@@ -8,7 +8,7 @@ import Layout from '../../components/layouts/article'
 
 const Work = () => {
     return (
-        <Layout title="Search'n Rock">
+        <Layout title="Search'n Rock" desc="Mis responsabilidades y mi trabajo en Quartex.net">
             <Container>
                 <Title>
                     Quartex.net <Badge>2020 - 2021</Badge>
