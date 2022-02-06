@@ -1,9 +1,10 @@
 import { Container, Heading } from '@chakra-ui/react'
+import Head from 'next/head'
 import Layout from '../components/layouts/article'
 
 const Posts = () => {
  return (
-  <Layout title="Posts">
+  <Layout title="Posts" desc="Posts/tutoriales de tecnologia">
    <Container>
     <Heading as="h2" fontSize={36} mb={4}>
      Proximamente...
