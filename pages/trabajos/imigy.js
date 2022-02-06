@@ -1,4 +1,5 @@
 import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
+import Head from 'next/head'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 
@@ -8,11 +9,10 @@ import Layout from '../../components/layouts/article'
 
 const Work = () => {
     return (
-        <Layout title="Search'n Rock">
+        <Layout title="Search'n Rock" desc="Imigy por dentro. Como esta hecho la aplicacion">
             <Container>
                 <Title>
                     Imigy <Badge>2021 - Presente</Badge>
-
                 </Title>
                 <P>Aplicacion web minimalista para compartir fotos y screenshots con nuestros amigos hecho con Svelte.</P>
                 <List ml={4} my={4}>
