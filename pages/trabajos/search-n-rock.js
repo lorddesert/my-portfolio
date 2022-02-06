@@ -8,7 +8,7 @@ import Layout from '../../components/layouts/article'
 
 const Work = () => {
     return (
-        <Layout title="Search'n Rock">
+        <Layout title="Search'n Rock" desc="¿Como hice Search&apos;n Rock?">
             <Container>
                 <Title>
                     Search n&apos; Rock <Badge>2019</Badge>
