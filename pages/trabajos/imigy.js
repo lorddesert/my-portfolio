@@ -1,5 +1,4 @@
 import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
-import Head from 'next/head'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 

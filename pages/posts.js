@@ -1,5 +1,4 @@
 import { Container, Heading } from '@chakra-ui/react'
-import Head from 'next/head'
 import Layout from '../components/layouts/article'
 
 const Posts = () => {
