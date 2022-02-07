@@ -1,5 +1,6 @@
 import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
+import ContactForm from '../components/contact-form'
 
 import {
  Box,
@@ -11,7 +12,7 @@ import {
  Link,
  ListItem,
  List,
- Icon,
+ Icon
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -55,9 +56,9 @@ const Page = () => {
       Mi trabajo
      </Heading>
      <Paragraph>
-      Soy un Desarrollador y Diseñador UI/Web Freelance con 2 años de experiencia,
-      curioso y amante de la musica, al que le gusta invertir su tiempo libre en
-      desarrollar proyectos como: {''}
+      Soy un Desarrollador y Diseñador UI/Web Freelance con 2 años de
+      experiencia, curioso y amante de la musica, al que le gusta invertir su
+      tiempo libre en desarrollar proyectos como: {''}
       <NextLink href="/trabajos/imigy">
        <Link>Imigy</Link>
       </NextLink>
@@ -96,26 +97,43 @@ const Page = () => {
     </Section>
     <Section delay={0.3}>
      <Heading as="h3" variant="section-title">
-        Mis redes
+      Mis redes
      </Heading>
      <List>
       <ListItem>
        <Link href="https://github.com/lorddesert" target="_blank">
-        <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>}>
-            @lorddesert
+        <Button
+         variant="ghost"
+         colorScheme="teal"
+         leftIcon={<Icon as={IoLogoGithub} />}
+        >
+         @lorddesert
         </Button>
        </Link>
       </ListItem>
       <ListItem>
        <Link href="https://twitter.com/lorddesert" target="_blank">
-        <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter}/>}>
-            @lorddesert
+        <Button
+         variant="ghost"
+         colorScheme="teal"
+         leftIcon={<Icon as={IoLogoTwitter} />}
+        >
+         @lorddesert
         </Button>
        </Link>
       </ListItem>
      </List>
     </Section>
-    <span>Gracias a <Link href="https://github.com/craftzdog">@craftzdog</Link> and <Link href="https://sketchfab.com/ini_andri">ini_andri</Link></span>
+    <Section delay={0.4} id="contacto">
+     <Heading as="h3" variant="section-title">
+      Contacto
+     </Heading>
+     <ContactForm />
+    </Section>
+    <span>
+     Gracias a <Link href="https://github.com/craftzdog">@craftzdog</Link> and{' '}
+     <Link href="https://sketchfab.com/ini_andri">ini_andri</Link>
+    </span>
    </Container>
   </Layout>
  )
