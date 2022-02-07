@@ -4,8 +4,6 @@ import { useForm, ValidationError } from '@formspree/react'
 import {
  FormControl,
  FormLabel,
- FormErrorMessage,
- FormHelperText,
  Heading,
  Button,
  Input,
