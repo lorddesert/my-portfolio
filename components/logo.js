@@ -24,7 +24,7 @@ const LogoBox = styled.span`
 const Logo = () => {
 //  const logoImg = '/images/logo.png'
  return (
-  <Link href='/'>
+  <Link href='/' passHref>
     <LogoBox>
      <Image src={logoImg} width={30} height={30} alt="logo"></Image>
      <Text
