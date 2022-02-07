@@ -56,7 +56,7 @@ export default function ContactForm() {
       disabled={state.submitting}
       my={4}
       //  variant="outline"
-      colorScheme="pink"
+      colorScheme="teal"
      >
       Enviar mensaje
      </Button>
