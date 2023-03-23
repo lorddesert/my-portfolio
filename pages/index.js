@@ -53,12 +53,10 @@ const Page = () => {
 
     <Section delay={0.1}>
      <Heading as="h3" variant="section-title">
-      Mi trabajo
+      Quien soy
      </Heading>
      <Paragraph>
-      Soy un Desarrollador y Diseñador UI/Web Freelance con 2 años de
-      experiencia, curioso y amante de la musica, al que le gusta invertir su
-      tiempo libre en desarrollar proyectos como: {''}
+      {"Software Engineer y amante de la musica, tengo 3 años de experiencia y me especializo en Front end. Trabajo principalmente con React pero amo Svelte <3."}
       <NextLink href="/trabajos/imigy">
        <Link>Imigy</Link>
       </NextLink>
@@ -89,6 +87,25 @@ const Page = () => {
       Front end developer Freelance
      </BioSection>
     </Section>
+
+    <Section delay={0.2}>
+     <Heading as="h3" variant="section-title">
+        Q&A
+     </Heading>
+     <BioSection>
+      <BioYear>Q: ¿Donde te gustaria trabajar?</BioYear>
+      <BioYear>A: En un equipo que se preocupa por las personas que usarán su producto.</BioYear>
+      </BioSection>
+     <BioSection>
+      <BioYear>Q: ¿Cuales son tus objetivos?</BioYear>
+      <BioYear>A: Especializarme en desarrollo web y JavaScript.</BioYear>
+      </BioSection>
+     <BioSection>
+      <BioYear>Q: ¿Que otras areas/skills te gustaria desarrollar?</BioYear>
+      <BioYear>A: Cloud, machine learning y inteligencia artificial.</BioYear>
+      </BioSection>
+    </Section>
+
     <Section>
      <Heading as="h3" variant="section-title">
       I ❤
