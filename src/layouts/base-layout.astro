@@ -1,0 +1,45 @@
+---
+const { title } = Astro.props
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{title}</title>
+  </head>
+  <body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/blog">Blog</a>
+  </nav>
+    <h1>{title}</h1>
+    <article>
+      <slot />
+    </article>
+  </body>
+</html>
+
+<style>
+  :root {
+    --bg-color: #000000e6;
+  }
+
+  html {
+    background-color: var(--bg-color);
+    color: whitesmoke;
+  }
+
+  body {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  nav a {
+    margin-right: 5px;
+  }
+</style>
