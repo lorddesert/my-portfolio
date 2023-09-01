@@ -1,18 +1,19 @@
 ---
-const { title } = Astro.props
+const { title } = Astro.props;
 ---
+
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
   </head>
   <body>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/blog">Blog</a>
-  </nav>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+    </nav>
     <h1>{title}</h1>
     <article>
       <slot />
@@ -41,5 +42,11 @@ const { title } = Astro.props
 
   nav a {
     margin-right: 5px;
+  }
+
+  :global(p) {
+    max-width: 70ch;
+    /*TODO: This should be for other elements as well? */
+    line-height: 1.5;
   }
 </style>
