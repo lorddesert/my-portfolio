@@ -1,5 +1,6 @@
 ---
 const { title } = Astro.props;
+import '../styles/global.css'
 ---
 
 <html lang="en" theme="dark">
@@ -42,15 +43,6 @@ const { title } = Astro.props;
     display: flex;
     gap: 5rem;
     align-items: center;
-  }
-
-  body {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  nav {
-    margin-top: 1rem;
   }
 
   nav a {
