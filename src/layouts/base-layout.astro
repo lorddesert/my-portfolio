@@ -1,9 +1,7 @@
 ---
 const { title } = Astro.props;
+import Footer from "../components/footer.astro";
 import "../styles/global.css";
-
-const platform = "github";
-const username = "lorddesert";
 ---
 
 <html lang="en" theme="dark">
@@ -26,15 +24,7 @@ const username = "lorddesert";
     <article>
       <slot />
     </article>
-
-    <footer>
-      <p>Learn more about my projects on</p>
-      <ul class="social-links">
-        <li>
-          <a href={`https://www.${platform}.com/${username}`}>{platform}</a>
-        </li>
-      </ul>
-    </footer>
+    <Footer />
   </body>
 </html>
 
@@ -75,18 +65,6 @@ const username = "lorddesert";
 
   nav a {
     margin-right: 5px;
-  }
-
-  footer {
-    border-top: solid 1px hsl(0, 0%, 20%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .social-links { 
-    list-style-type: none;
-    margin: 0;
   }
 
   :global(p) {
