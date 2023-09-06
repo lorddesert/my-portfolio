@@ -2,9 +2,10 @@
 const { title } = Astro.props;
 import Footer from "../components/footer.astro";
 import "../styles/global.css";
+import Hamburger from "../components/hamburger.astro";
 ---
 
-<html lang="en" theme="dark">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,15 +17,21 @@ import "../styles/global.css";
         <h2>lorddesert</h2>
       </a>
       <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/blog">Blog</a>
+        <Hamburger />
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/blog">Blog</a>
+        </div>
       </nav>
     </header>
     <article>
       <slot />
     </article>
     <Footer />
+    <script>
+      import "../scripts/menu.js"
+    </script>
   </body>
 </html>
 
@@ -49,6 +56,13 @@ import "../styles/global.css";
       "Open Sans",
       "Helvetica Neue",
       sans-serif;
+  }
+  h2 {
+    color: var(--accent-color);
+  }
+
+  h2:hover {
+    color: var(--accent-color-darker);
   }
 
   body {
