@@ -1,17 +1,14 @@
 ---
-layout: ../../layouts/base-layout.astro
-title: 'My First Blog Post'
+layout: ../../layouts/markdown-post-layout.astro
+title: 'My First Amazing Blog Post'
 pubDate: 2023-08-31
 description: 'This is the first post of my new Astro blog.'
 author: 'Sacha Nocetto'
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    url: 'https://picsum.photos/500/300'
     alt: 'Sacha Nocetto Non existing image here.'
 tags: ["dev", "blogging", "learning in public"]
 ---
-# My First Amazing Blog Post
-
-Published on: 2023-08-31
 
 Welcome to my _new blog_ about learning everything that comes across my adventure! Here, I will share my learning journey as I build projects on my way to becoming a better Front end engineer.
 
