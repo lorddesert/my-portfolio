@@ -1,22 +1,29 @@
 ---
 import Layout from "../layouts/base-layout.astro";
-// Welcome to Astro! Everything between these triple-dash code fences
-// is your "component frontmatter". It never runs in the browser.
-// console.log('This runs in your terminal, not the browser!');
+const allPosts = await Astro.glob("../pages/posts/*.md");
 ---
 
 <!-- Below is your "component template." It's just HTML, but with
      some magic sprinkled in to help you build great templates. -->
 <Layout>
   <p>
-    I am a curious person, I like to get out of my comfort zone to
-    improve as a programmer and as a person. I like to work in
-    team and add value, help and learn to form a better
-    culture in this industry.
+    I am a curious person, I like to get out of my comfort zone to improve as a
+    programmer and as a person. I like to work in team and add value, help and
+    learn to form a better culture in this industry.
   </p>
-  <ul>
-    <li>
-      <a href="/posts/first-post">My First Amazing Blog Post</a>
-    </li>
-  </ul>
+
+  <section>
+    <h3></h3>
+    <ul>
+      {
+        allPosts.map((post) => {
+          return (
+            <li>
+              <a href={post.url}>{post.frontmatter.title}</a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </section>
 </Layout>

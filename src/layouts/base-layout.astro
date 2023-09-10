@@ -1,8 +1,13 @@
 ---
 const { title } = Astro.props;
+import Footer from "../components/footer.astro";
+import Navigation from "../components/navigation.astro";
+
+// Styles
+import "../styles/global.css";
 ---
 
-<html lang="en" theme="dark">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,46 +16,42 @@ const { title } = Astro.props;
   <body>
     <header>
       <a href="/" style="text-decoration: none;">
-        <h1>lorddesert</h1>
+        <h2>lorddesert</h2>
       </a>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/blog">Blog</a>
-      </nav>
+      <Navigation />
     </header>
     <article>
       <slot />
     </article>
+    <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
 
 <style>
-  :root {
-    --bg-color: #000000e6;
+  h2 {
+    color: var(--accent-color);
   }
 
-  html {
-    background-color: var(--bg-color);
-    color: whitesmoke;
-    margin: .5rem;
-    accent-color: crimson;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  h2:hover {
+    color: var(--accent-color-darker);
+  }
+
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+
+  article {
+    display: grid;
   }
 
   header {
     display: flex;
-    gap: 5rem;
-    align-items: center;
-  }
-
-  body {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  nav {
-    margin-top: 1rem;
+    justify-content: space-around;
   }
 
   nav a {

@@ -1,0 +1,22 @@
+---
+const { platform, username, src, alt } = Astro.props;
+---
+
+<a href={`https://www.${platform}.com/${username}`} target="_blank">
+  <img src={src} alt={alt} />
+</a>
+
+<style>
+  img {
+    max-width: 24px;
+  }
+
+  a {
+    padding: 0.5rem 1rem;
+  }
+  
+
+  a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+</style>

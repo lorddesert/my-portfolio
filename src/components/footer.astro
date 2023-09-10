@@ -1,0 +1,65 @@
+---
+import Social from "../components/social.astro";
+
+const socialPlatforms = [
+  {
+    platform: "github",
+    username: "lorddesert",
+    imgSrc: "/github-icon.svg",
+    alt: "Github link",
+  },
+  {
+    platform: "instagram",
+    username: "lordesert",
+    imgSrc: "/instagram-icon.svg",
+    alt: "Instagram link",
+  },
+  {
+    platform: "twitter",
+    username: "lorddesert",
+    imgSrc: "/twitter-icon.svg",
+    alt: "Twitter link",
+  },
+];
+---
+
+<footer>
+  <p>Coded with ❤️, and of curse, music.</p>
+  <ul class="social-links">
+    {
+      socialPlatforms.map(({ platform, username, imgSrc, alt }) => (
+        <li>
+          <Social
+            platform={platform}
+            username={username}
+            src={imgSrc}
+            alt={alt}
+          />
+        </li>
+      ))
+    }
+  </ul>
+</footer>
+
+<style>
+  footer {
+    border-top: solid 1px hsl(0, 0%, 20%);
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-links {
+    display: flex;
+    gap: .5em;
+    gap: .5rem;
+
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .social-links li {
+    display: flex;
+  }
+</style>
