@@ -1,7 +1,7 @@
 ---
 const { title } = Astro.props;
 import Footer from "../components/footer.astro";
-import Hamburger from "../components/hamburger.astro";
+import Navigation from "../components/navigation.astro";
 
 // Styles
 import "../styles/global.css";
@@ -18,21 +18,15 @@ import "../styles/global.css";
       <a href="/" style="text-decoration: none;">
         <h2>lorddesert</h2>
       </a>
-      <nav>
-        <Hamburger />
-        <div class="nav-links">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/blog">Blog</a>
-        </div>
-      </nav>
+      <Navigation />
     </header>
     <article>
       <slot />
     </article>
     <Footer />
     <script>
-      import "../scripts/menu.js"
+      import "../scripts/menu.js";
+      import "../scripts/theme.js";
     </script>
   </body>
 </html>
@@ -52,10 +46,13 @@ import "../styles/global.css";
     min-height: 100vh;
   }
 
+  article {
+    display: grid;
+  }
+
   header {
     display: flex;
-    gap: 5rem;
-    align-items: center;
+    justify-content: space-around;
   }
 
   nav a {
