@@ -2,7 +2,7 @@
 @import "open-props/style";
 
 :root {
-  --accent-color: #e1ac41;
+  --accent-color: var(--blue-12);
   --bg-color: #191919;
   /* --accent-color-darker: #0cb66f; */
 }
@@ -25,14 +25,35 @@ html {
     sans-serif;
 }
 
+/* html:has(.dark) {
+  background-color: var(--gray-10);
+  color: var(--gray-2);
+}
+
+html:has(.light) {
+  --accent-color: var(--blue-12);
+} */
 
 
-@media (prefers-color-scheme: dark) {
+.dark {
+  background-color: var(--gray-10);
+  color: var(--gray-2);
+  --accent-color: #e1ac41;
+
+}
+
+/* @media (prefers-color-scheme: dark) {
   html {
     background-color: var(--gray-10);
     color: var(--gray-2);
   }
 }
+
+@media (prefers-color-scheme: light) {
+  html * {
+    --accent-color: var(--blue-12);
+  }
+} */
 
 
 body {
@@ -53,7 +74,6 @@ h1 {
 }
 
 .hamburger {
-  padding-right: 20px;
   cursor: pointer;
 }
 
@@ -96,13 +116,34 @@ a {
   display: unset;
 }
 
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    background-color: var(--gray-10);
+    color: var(--gray-2);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html * {
+    --accent-color: var(--blue-12);
+  }
+} */
+
+@media screen and (max-width: 636px) {
+  header {
+    justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
     display: block;
     position: static;
     width: auto;
     background: none;
+    display: flex;
+    align-items: center;
   }
 
   .nav-links a {
