@@ -1,0 +1,23 @@
+---
+import Hamburger from "./hamburger.astro";
+import ThemeButton from "../components/theme-button.astro";
+
+---
+<nav>
+  <Hamburger />
+  <div class="nav-links">
+    <a href="/about">About</a>
+    <a href="/blog">Blog</a>
+    <a href="/tags">Tags</a>
+    <ThemeButton />
+
+  </div>
+</nav>
+
+<style>
+  nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+</style>
