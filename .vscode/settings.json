@@ -1,6 +1,9 @@
 {
   "cSpell.words": [
-    "astro"
+    "astro",
+    "kanban",
+    "Nocetto",
+    "Sacha"
   ],
   "cssvar.files": [
     "./node_modules/open-props/open-props.min.css",
@@ -14,6 +17,6 @@
 
   // add support for autocomplete in JS or JS like files
   "cssvar.extensions": [
-    "css", "postcss", "jsx", "tsx"
+    "css", "postcss", "jsx", "tsx", "astro"
   ]
 }
