@@ -16,7 +16,7 @@ Job seeking is one of the most difficult and stressful times when you are trying
 
 From the application, to the preparations, seeking of opportunities, job market study, interview preparation, communication abilities, getting to know the possible red flags, [the new AI filtering system](https://www.accenture.com/content/dam/accenture/final/accenture-com/document/Hiring-Process-AI-FAQ.pdf) (Is pretty new, but I'm seeing it more often). And we didn't even get to the technical interview, and we already have a bunch of layers that we have to cross.
 
->Side note: Remember, this is your first experience, even so, companies often look for people who is _Junior_ yet has already 1-2 years of experience.
+>Side note: Remember, this is your first experience, even so, companies often look for people who is _Junior_ yet has >already 1-2 years of experience.
 
 
 If you didn't pass the first part, you're gonna find a message in you mailbox saying... Hopefully, something. Most of the time companies don't give you any type of feedback about *why* you didn't pass the interview process, just a generic message, or even worse, they don't reach you at all.
