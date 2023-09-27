@@ -2,7 +2,7 @@
 layout: ../../layouts/markdown-post-layout.astro
 title: 'How to close WSL'
 pubDate: 2023-08-31
-description: 'This is the first post of my new Astro blog.'
+description: 'New format!'
 author: 'Sacha Nocetto'
 image:
     url: 'https://picsum.photos/500/300'
