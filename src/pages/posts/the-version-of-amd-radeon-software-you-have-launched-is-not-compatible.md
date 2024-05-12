@@ -2,7 +2,7 @@
 layout: ../../layouts/markdown-post-layout.astro
 title: 'The version of amd radeon software you have launched is not compatible'
 pubDate: 2024-05-04
-description: 'The f##king solution?'
+description: 'The miracle solution?'
 author: 'Sacha Nocetto'
 image:
     url: 'https://picsum.photos/500/300'
