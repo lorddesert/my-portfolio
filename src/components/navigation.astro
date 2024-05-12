@@ -1,16 +1,18 @@
 ---
 import Hamburger from "./hamburger.astro";
 import ThemeButton from "../components/theme-button.astro";
-
 ---
+
 <nav>
   <Hamburger />
   <div class="nav-links">
     <a href="/about">About</a>
     <a href="/blog">Blog</a>
     <a href="/tags">Tags</a>
+    <a href="/save-data">
+      <span class="project">Save datas</span>
+    </a>
     <ThemeButton />
-
   </div>
 </nav>
 
@@ -19,5 +21,13 @@ import ThemeButton from "../components/theme-button.astro";
     position: relative;
     display: flex;
     align-items: center;
+  }
+
+  .project {
+    background: -webkit-linear-gradient(top left, var(--red-4), var(--orange-6));
+    font-weight: bold;
+    text-decoration: underline red;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 </style>
